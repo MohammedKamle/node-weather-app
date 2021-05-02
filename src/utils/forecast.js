@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
         }
         else {
             // console.log(`${response.body.current.weather_descriptions[0]}. It is currently ${response.body.current.temperature} degrees in ${response.body.location.region} but it feels like ${response.body.current.feelslike}`)
-            callback(undefined, `${response.body.current.weather_descriptions[0]}. It is currently ${response.body.current.temperature} degrees in ${response.body.location.region} but it feels like ${response.body.current.feelslike}`)
+            callback(undefined, `${response.body.current.weather_descriptions[0]}. It is currently ${response.body.current.temperature} degrees in ${response.body.location.region} but it feels like ${response.body.current.feelslike} outside. The humidity is ${response.body.current.humidity}%`)
         }
 
 
